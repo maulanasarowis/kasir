@@ -88,7 +88,7 @@ export default class Home extends Component {
           axios
             .post(API_URL + "keranjangs", keranjang)
             .then((res) => {
-              // this.getListKeranjang();
+              this.getListKeranjang();
               swal({
                 title: "Sukses Masuk Keranjang",
                 text: "Sukses Masuk Keranjang " + keranjang.product.nama,
